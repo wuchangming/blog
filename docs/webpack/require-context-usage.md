@@ -153,8 +153,8 @@ const rootRoute = {
     ]
 };
 ```
-优化后，新增一个业务模块，只要route按照统一的目录结构。业务模块route就能被自动关联到rootRoute里。  
-[示例代码](../../code/require-context-usage/route-demo)  
+优化后，新增一个业务模块，只要业务模块route文件遵循统一的目录结构。业务模块route就能被自动关联到rootRoute里。  
+[查看示例代码](../../code/require-context-usage/route-demo)  
 
 ### 其他应用场景
 这个思路统一可应用于其他想要去中心化的功能模块。  
