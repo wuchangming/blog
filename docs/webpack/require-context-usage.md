@@ -127,9 +127,10 @@ const rootRoute = {
 按该方式拆分后，每个业务模块维护自身的路由配置。新增业务模块路由，只需要在总的rootRoute中引入该业务模块的路由即可（**也就是加一行代码**）。这个方案看来是已经接近完美了。**但如果想达到连一行代码都不用加？实现彻彻底底的去中心化管理**
 
 ### require.context是什么？
+想要彻彻底底的实现去中心化管理我们需要使用到require.context
 > webpack官方文档的介绍[require.context](https://webpack.js.org/guides/dependency-management/#require-context)
 
-简单说就是：有了require.context，你可以通过正则匹配引入相应的模块文件。
+简单说就是：有了require.context，我们可以通过正则匹配引入相应的文件模块。
 
 ```javascript
 require.context(directory, useSubdirectories, regExp)
@@ -139,7 +140,7 @@ require.context有三个参数：
 - useSubdirectories：是否检索子目录
 - regExp: 匹配文件的正则表达式
 
-改造后的rootRoute.js文件
+使用require.context改造后的rootRoute.js文件
 ```javascript
 const rootRoute = {
     childRoutes: [
