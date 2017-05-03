@@ -1,6 +1,7 @@
 # 使用webpack的`require.context`实现路由去中心化管理
 
 > 阅读须知：示例代码以react-router V3为例。其他路由同样适用，如：vue-router。同样其他的功能模块也可以用该思路进行相应的去中心化管理改造。
+本文[示例代码](../../code/require-context-usage/route-demo)
 
 ### 一个项目中路由的变化过程
 当你在开发一个大型单页面应用的时候，项目之初一般做法是所有的路由规则都维护在一个`route.js`的文件里。
@@ -159,4 +160,4 @@ const rootRoute = {
 这个思路统一可应用于其他想要去中心化的功能模块。  
 - 模块化管理reducer
 
-`欢迎转载，转载请注明出处：`
+`欢迎转载，转载请注明出处：https://github.com/wuchangming/blog/blob/master/docs/webpack/require-context-usage.md`
