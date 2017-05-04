@@ -158,7 +158,7 @@ const rootRoute = {
 [查看示例代码](../../code/require-context-usage/route-demo)  
 
 ### 其他应用场景
-这个思路统一可应用于其他想要去中心化的功能模块。  
+这个思路可应用于其他想要进行"去中心化"管理的功能模块。  
 - 模块化管理reducer
 
 `欢迎转载，转载请注明出处：https://github.com/wuchangming/blog/blob/master/docs/webpack/require-context-usage.md`
